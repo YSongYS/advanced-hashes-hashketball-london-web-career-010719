@@ -34,3 +34,11 @@ def num_points_scored(player_name)
     end
   end
 end
+
+def shoe_size(player_name)
+  game_hash.values.each do |team|
+    team[:players].each do |player|
+      return player[:shoe] if player.has_value?(player_name)
+    end
+  end
+end
