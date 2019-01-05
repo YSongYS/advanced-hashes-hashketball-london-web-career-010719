@@ -81,7 +81,7 @@ def big_shoe_rebounds
     team[:players].each do |player|
       if player[:shoe] > current_large
         bounce = player[:bounce]
-        current_large = player[:shoe] 
+        current_large = player[:shoe]
       end
     end
   end
