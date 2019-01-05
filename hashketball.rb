@@ -49,4 +49,8 @@ def team_colors(team)
       return team_data[:colors].map(&:capitalize)
     end
   end
+end
+
+def team_names
+  game_hash.values.map {|value| value[:team_names]}
 end 
