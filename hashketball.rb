@@ -51,6 +51,10 @@ def team_colors(team)
   end
 end
 
+def team_names
+  game_hash.values.map {|value| value[:team_name]}
+end
+
 def player_numbers(team)
   game_hash.values.each do |team_info|
     if team_info.has_value?(team)
@@ -66,5 +70,5 @@ def player_stats(player_name)
         return player
       end
     end
-  end 
+  end
 end
