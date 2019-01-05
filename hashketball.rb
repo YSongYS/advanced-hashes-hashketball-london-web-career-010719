@@ -9,7 +9,8 @@ def game_hash(game_hash)
     away:{
       team_name:"",
       colors:[],
-      players:{}  
+      players:{}
     }
   }
+  game_hash
 end
