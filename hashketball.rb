@@ -80,7 +80,7 @@ def big_shoe_rebounds
   game_hash.values.each do |team|
     team[:players].each do |player|
       if player[:shoe] > current_large
-        bounce = player[:bounce]
+        bounce = player[:rebounds]
         current_large = player[:shoe]
       end
     end
